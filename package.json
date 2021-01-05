@@ -1,0 +1,13 @@
+{
+  "name": "twitter-bot",
+  "version": "1.0.0",
+  "description": "dreck",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "asumjiiiiiiiiii dreck",
+  "license": "ISC",
+  "dependencies": {
+  }
+}

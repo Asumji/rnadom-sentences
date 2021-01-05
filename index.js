@@ -1,0 +1,31 @@
+var object = ["me", "him", "truck", "car", "pool", "apple", "gravity"]
+var noun = ["my parents", "the teachers", "I", "we", "they", "his toys"]
+var verb = ["catch", "swim in", "eat", "brake", "carry", "see", "make", "do"]
+var adjective = ["a beautiful", "a wet", "a red", "an unclear", "a weird", "a satisfying", "an interesting"]
+
+var verb_past = ["caught", "swam in", "ate", "broke", "carried", "saw", "made", "did"]
+
+var verb_future = ["will catch", "will swim in", "will eat", "will brake", "will carry", "will see", "will make", "will do"]
+
+var time = [["At 10pm", "future"], ["Sometimes", "regularly"], ["Tommorow", "future"], ["In 2015", "past"], ["In the ol' times", "past"]]
+
+var res1 = Math.floor(Math.random() * noun.length)
+var res2 = Math.floor(Math.random() * verb.length)
+var res3 = Math.floor(Math.random() * adjective.length)
+var res4 = Math.floor(Math.random() * object.length)
+var res5 = Math.floor(Math.random() * time.length)
+//sentence = time[res5] + " " + noun[res1] + " " + verb[res2] + " " + adjective[res3] + " " + object[res4] + "."
+
+switch(time[res5][1]) {
+    case "regularly":
+        sentence = time[res5][0] + " " + noun[res1] + " " + verb[res2] + " " + adjective[res3] + " " + object[res4] + "."
+
+    case "future":
+       sentence = time[res5][0] + " " + noun[res1] + " " + verb_future[res2] + " " + adjective[res3] + " " + object[res4] + "."
+
+    case "past":
+       sentence = time[res5][0] + " " + noun[res1] + " " + verb_past[res2] + " " + adjective[res3] + " " + object[res4] + "."
+}
+
+console.log(sentence)
+
