@@ -16,16 +16,32 @@ var res4 = Math.floor(Math.random() * object.length)
 var res5 = Math.floor(Math.random() * time.length)
 //sentence = time[res5] + " " + noun[res1] + " " + verb[res2] + " " + adjective[res3] + " " + object[res4] + "."
 
-switch(time[res5][1]) {
-    case "regularly":
-        sentence = time[res5][0] + " " + noun[res1] + " " + verb[res2] + " " + adjective[res3] + " " + object[res4] + "."
+// switch(time[res5][1]) {
+//     case "regularly":
+//         sentence = time[res5][0] + " " + noun[res1] + " " + verb[res2] + " " + adjective[res3] + " " + object[res4] + "."
+//         console.log("Reg")
 
-    case "future":
-       sentence = time[res5][0] + " " + noun[res1] + " " + verb_future[res2] + " " + adjective[res3] + " " + object[res4] + "."
+//     case "future":
+//        sentence = time[res5][0] + " " + noun[res1] + " " + verb_future[res2] + " " + adjective[res3] + " " + object[res4] + "."
+//        console.log("Future")
 
-    case "past":
-       sentence = time[res5][0] + " " + noun[res1] + " " + verb_past[res2] + " " + adjective[res3] + " " + object[res4] + "."
+//     case "past":
+//        sentence = time[res5][0] + " " + noun[res1] + " " + verb_past[res2] + " " + adjective[res3] + " " + object[res4] + "."
+//        console.log("Past")
+// }
+
+if (time[res5][1] == "regularly") {
+    sentence = time[res5][0] + " " + noun[res1] + " " + verb[res2] + " " + adjective[res3] + " " + object[res4] + "."
+    console.log("Reg")
+} else if (time[res5][1] == "future") {
+    sentence = time[res5][0] + " " + noun[res1] + " " + verb_future[res2] + " " + adjective[res3] + " " + object[res4] + "."
+    console.log("Future")
+} else if (time[res5][1] == "past") {
+    sentence = time[res5][0] + " " + noun[res1] + " " + verb_past[res2] + " " + adjective[res3] + " " + object[res4] + "."
+    console.log("Past")
 }
+
+
 
 console.log(sentence)
 
